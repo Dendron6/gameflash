@@ -1,0 +1,21 @@
+{
+  "name": "gameflash",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "report": "mocha --reporter mochawesome --reporter-options reportDir=Report,reportFilename=GF4Y_Report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "chai": "^4.3.4",
+    "chromedriver": "^92.0.2",
+    "mocha": "^9.1.1",
+    "mochawesome": "^6.2.2",
+    "selenium-webdriver": "^4.0.0-rc-1"
+  }
+}
