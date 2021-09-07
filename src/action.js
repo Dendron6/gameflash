@@ -1,7 +1,8 @@
 const {Builder, By, Key, until} = require('selenium-webdriver');
-//const chromedriver = require('chromedriver');
+const chromedriver = require('chromedriver');
 const webdriver = require('selenium-webdriver');
 var DriverPage = require("../src/driver")
+
 
 class ActionPage extends DriverPage{
 
