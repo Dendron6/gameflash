@@ -1,5 +1,5 @@
 const action = require("../src/action")
-const {By, Key, until, wait} = require("selenium-webdriver");
+const {By} = require("selenium-webdriver");
 const assert = require("assert");
 const axios = require("axios");
 
@@ -12,7 +12,6 @@ describe('Game Flash For You Test Suite', function () {
     let russianPage = '//header/div[1]/div[1]/ul[1]/li[1]/a[1]';
     let top100Eng = '//header/div[1]/ul[1]/li[6]/ul[1]/li[1]/a[1]';
     let otherButton = "//header/div[1]/ul[1]/li[6]/a[1]";
-    let list100 = "//*[@class='in']"
     before("Before Tests", async () => {
         await driver.get(baseurl)
     })
