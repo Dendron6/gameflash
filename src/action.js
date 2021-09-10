@@ -8,9 +8,6 @@ class ActionPage extends DriverPage {
     async findByXpath(xpath) {
         await driver.findElement(By.xpath(xpath)).click()
     }
-    async findByXpath1(xpath) {
-        await driver.findElements(By.xpath(xpath))
-    }
 
     async timer(url){
         let startTime = new Date().getTime();
