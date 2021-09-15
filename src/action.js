@@ -1,5 +1,5 @@
-const {Builder, By, Key, until, wait} = require('selenium-webdriver');
-const chromedriver = require('chromedriver');
+const {By, Key} = require('selenium-webdriver');
+chromedriver = require('chromedriver');
 const DriverPage = require("../src/driver")
 const axios = require("axios");
 
@@ -29,7 +29,7 @@ class ActionPage extends DriverPage {
 
     async getLangConformation(x) {
         const response = await axios.get(x)
-            return response.data.slice(27, 32)
+        return response.data.slice(27, 32)
 
     }
 }

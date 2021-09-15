@@ -7,12 +7,14 @@ const axios = require("axios");
 module.exports = class DriverPage {
     constructor() {
         global.driver = driver
-        global.expect = expect
-        global.axios = axios
+        global["expect"] = expect
+        global["axios"] = axios
 
 
     }
 }
+
+
 
 
 

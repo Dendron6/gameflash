@@ -8,8 +8,8 @@ describe('Game Flash For You Test Suite', function () {
     this.timeout(50000);
     let baseurl = 'https://en.gf4y.com/';
     let germanPage = '//header/div[1]/div[1]/ul[1]/li[3]/a[1]';
-    let ukrainianPage = '//header/div[1]/div[1]/ul[1]/li[2]/a[1]';
-    let russianPage = '//header/div[1]/div[1]/ul[1]/li[1]/a[1]';
+    //let ukrainianPage = '//header/div[1]/div[1]/ul[1]/li[2]/a[1]';
+    //let russianPage = '//header/div[1]/div[1]/ul[1]/li[1]/a[1]';
     let top100Eng = '//header/div[1]/ul[1]/li[6]/ul[1]/li[1]/a[1]';
     let otherButton = "//header/div[1]/ul[1]/li[6]/a[1]";
     before("Before Tests", async () => {
@@ -60,5 +60,4 @@ describe('Game Flash For You Test Suite', function () {
     })
 
 })
-
 
