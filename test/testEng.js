@@ -11,7 +11,7 @@ describe('English Game Flash For You Test Suite', function () {
         await driver.get(baseurl)
     })
     after('Quit Test', async () => {
-        await driver.quit()
+        // await driver.quit()
     })
 
     it('Server response 200 OK', async () => {
