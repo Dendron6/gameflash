@@ -2,7 +2,7 @@ const action = require("../src/action")
 const {By} = require("selenium-webdriver");
 
 
-describe('Game Flash For You Test Suite', function () {
+describe('Russian Game Flash For You Test Suite', function () {
     this.timeout(50000);
     let baseurl = 'https://gf4y.com/';
 
@@ -78,12 +78,12 @@ describe('Game Flash For You Test Suite', function () {
     //test of German version link
 
     it(`Linkage test, switch to ${action.langGer} page`, async () => {
-        global.expectedUrl = await action.findCurrentUrl(action.flag2);
-        expect(expectedUrl).to.be.equal('https://de.gf4y.com/', `This is URL of ${action.langGer} page`)
+        global.expectedUrl3 = await action.findCurrentUrl(action.flag2);
+        expect(expectedUrl3).to.be.equal('https://de.gf4y.com/', `This is URL of ${action.langGer} page`)
 
     })
     it(`Switching to ${action.langGer} language`, async () => {
-        let expectedLanguage = await action.getLangConformation(expectedUrl)
+        let expectedLanguage = await action.getLangConformation(expectedUrl3)
         await expect(expectedLanguage).to.be.equal('de-de', `Language is ${action.langGer}`)
 
     })
